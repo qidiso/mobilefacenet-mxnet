@@ -1,5 +1,7 @@
 
 trainning for a week long time .now i get better result.
+
+
 lr-batch-epoch: 0.001 7999 0
 testing verification..
 (12000, 128)
