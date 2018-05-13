@@ -1,3 +1,42 @@
+
+trainning for a week long time .now i get better result.
+lr-batch-epoch: 0.001 7999 0
+testing verification..
+(12000, 128)
+infer time 12.323731
+[lfw][8000]XNorm: 11.118196
+[lfw][8000]Accuracy-Flip: 0.99583+-0.00375
+testing verification..
+(14000, 128)
+infer time 14.580451
+[cfp_fp][8000]XNorm: 9.335661
+[cfp_fp][8000]Accuracy-Flip: 0.88786+-0.01615
+testing verification..
+(12000, 128)
+infer time 12.362448
+[agedb_30][8000]XNorm: 11.044563
+[agedb_30][8000]Accuracy-Flip: 0.96083+-0.00827
+saving 4
+INFO:root:Saved checkpoint to "../models/MobileFaceNet/model-y1-arcface-0004.params"
+[8000]Accuracy-Highest: 0.96133
+
+or
+
+infer time 12.754381
+[lfw][46000]XNorm: 11.113467
+[lfw][46000]Accuracy-Flip: 0.99550+-0.00395
+testing verification..
+(14000, 128)
+infer time 14.228613
+[cfp_fp][46000]XNorm: 9.320184
+[cfp_fp][46000]Accuracy-Flip: 0.89257+-0.01589
+testing verification..
+(12000, 128)
+infer time 12.060387
+[agedb_30][46000]XNorm: 11.055198
+[agedb_30][46000]Accuracy-Flip: 0.96117+-0.00746
+saving 23
+
 ## 前言
 
 本文主要记录下复现mobilefacenet的流程，参考mobilefacenet作者月生给的基本流程，基于insightface的4月27日
@@ -61,14 +100,3 @@ CUDA_VISIBLE_DEVICES='0' python -u train_softmax.py --network y1 --ckpt 2 --loss
 CUDA_VISIBLE_DEVICES='0' python -u train_softmax.py --network y1 --ckpt 2 --loss-type 4 --lr 0.001 --lr-steps 20000,30000,40000 --emb-size 128 --per-batch-size 512 --margin-s 128 --data-dir ../datasets/faces_ms1m_112x112 --pretrained ../models/MobileFaceNet/model-y1-arcface,80 --prefix ../models/MobileFaceNet/model-y1-arcface
 ```
 
-## 相关参考：
-
-[mobilefacenet论文](https://arxiv.org/abs/1804.07573)
-
-[insightface](https://github.com/deepinsight/insightface)
-
-## TODO
-
-- 三天后上传该方案验证日志log
-- 训练模型识别率等测试
-- ncnn框架移植mobilefacenet
