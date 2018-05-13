@@ -45,7 +45,7 @@ saving 23
 ```
 4bc813215a4603474c840c85fa2113f5354c7180
 ```
-版本代码在P40单显卡训练调试。
+版本代码在2块1080单显卡训练调试。
 
 ## 训练步骤
 1.拉取配置[insightface](https://github.com/deepinsight/insightface)工程的基础环境；
