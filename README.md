@@ -105,4 +105,4 @@ CUDA_VISIBLE_DEVICES='0' python -u train_softmax.py --network y1 --ckpt 2 --loss
 ##转为caffe 后的精度测试
 
 ![p1](D52FAF48D78FB516A4FB9191D068F11F.png)
-![p2](pro/frontal.png)
+
