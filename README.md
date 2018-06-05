@@ -1,3 +1,6 @@
+now pls move to the new mobilefacenet-V2(http://https://github.com/qidiso/mobilefacenet-V2),i modified the network ,and get 99.617% in LFW and 96.017 in agedb30.
+
+
 
 trainning for a week long time .now i get better result.
 
